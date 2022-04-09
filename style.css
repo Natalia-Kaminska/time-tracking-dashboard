@@ -1,0 +1,41 @@
+/* reset CSS */
+html {
+ box-sizing: border-box;
+ font-size: 16px;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+ margin: 0;
+ padding: 0;
+ font-weight: normal;
+}
+
+ol, ul {
+ list-style: none;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+}
+ /* styles */
+
+body {
+ background-color: hsl(226, 43%, 10%);
+ padding: 4%;
+}
+
+/* mobile styles*/
+@media only screen and (max-width: 375px) {
+ #dashboard-container {
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+  height: auto;
+  margin: 32px 16px;
+ }
+} 

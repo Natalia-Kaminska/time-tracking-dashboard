@@ -8,70 +8,82 @@
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./style.css" ></style>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
+  <div id="dashboard-container">
+    <div id="profile-container">
+      <div id="profile-wrapper">
+        <img src="./images/image-jeremy.png" alt="profile-avatar" />
+        <p>Report for</p>
+        <p id="profile-name">Jeremy Robson</p>
+      </div>
+      <div id="profile-time-nav">
+        <button class="profile-nav-button">Daily</button>
+        <button class="profile-nav-button">Weekly</button>
+        <button class="profile-nav-button">Monthly</button>
+      </div>
+    </div>
+    <div id="work-container">
+      <div class="header work-header"><img src="./images/icon-work.svg" alt="work"/></div>
+      <div class="section-content"> 
+        <span>Work</span>
+        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
+        <span data-time-current="Work"></span>
+        <span data-time-previous="Work"></span>
+      </div>
+    </div>
+    <div id="play-container">
+      <div class="header play-header"><img src="./images/icon-play.svg" alt="play"/></div>
+      <div class="section-content"> 
+        <span>Play</span>
+        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
+        <span data-time-current="Play"></span>
+        <span data-time-previous="Play"></span>
+      </div>
+    </div>
+    <div id="study-container">
+      <div class="header study-header"><img src="./images/icon-study.svg" alt="study"/></div>
+      <div class="section-content"> 
+        <span>Study</span>
+        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
+        <span data-time-current="Study"></span>
+        <span data-time-previous="Study"></span>
+      </div>
+    </div>
+    <div id="exercise-container">
+      <div class="header exercise-header"><img src="./images/icon-exercise.svg" alt="exercise"/></div>
+      <div class="section-content"> 
+        <span>Exercise</span>
+        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
+        <span data-time-current="Exercise"></span>
+        <span data-time-previous="Exercise"></span>
+      </div> 
+    </div>
+    <div id="social-container">
+      <div class="header social-header"><img src="./images/icon-social.svg" alt="social"/></div>
+      <div class="section-content"> 
+        <span>Social</span>
+        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
+        <span data-time-current="Social"></span>
+        <span data-time-previous="Social"></span>
+      </div> 
+    </div>
+    <div id="self-care-container">
+      <div class="header self-care-header"><img src="./images/icon-self-care.svg" alt="self-care"/></div>
+      <div class="section-content"> 
+        <span>Self Care</span>
+        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
+        <span data-time-current="Self-care"></span>
+        <span data-time-previous="Self-care"></span>
+      </div> 
+    </div>
+  </div>
+  <script src="script.js"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
