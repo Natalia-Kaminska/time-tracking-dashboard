@@ -30,7 +30,7 @@ body {
 }
 
 /* mobile styles*/
-@media only screen and (max-width: 375px) {
+@media only screen and (orientation: portrait) {
 
  #dashboard-container {
   display: grid;
