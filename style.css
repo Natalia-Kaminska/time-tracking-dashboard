@@ -31,11 +31,140 @@ body {
 
 /* mobile styles*/
 @media only screen and (max-width: 375px) {
+
  #dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  padding: 68px 8px;
+  font-family: 'Rubik', sans-serif;
+ }
+
+ #profile-wrapper, #profile-time-nav, .header, .section-content {
+  border-radius: 15px;
+ }
+
+ #profile-wrapper {
+  background-color: hsl(246, 80%, 60%);
+  height: 140px;
+  display: grid;
+  grid-template-columns: 70px 200px;
+  grid-template-rows: repeat(2, 35px);
+  grid-template-areas: 
+   "photo text"
+   "photo name" 
+  ;
+  justify-content: center;
+  align-content: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+ }
+
+ #profile-wrapper p:first-of-type {
+  grid-area: text;
+  align-self: center;
+  font-size: 14px;
+  color: hsl(240, 5%, 82%);
+ }
+
+ #profile-wrapper p:last-of-type {
+  grid-area: name;
+  font-size: 26px;
+  font-weight: 300;
+  color: hsl(240, 30%, 96%);
+ }
+
+ .profile-photo {
+  grid-area: photo;
+  width: 70px;
+  border: 3px solid hsl(240, 100%, 99%);
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  width: 335px;
-  height: auto;
-  margin: 32px 16px;
+ }
+
+ #profile-time-nav{
+  background-color: hsl(235, 46%, 20%);
+  height: 90px;
+  position: relative;
+  z-index: -1;
+  transform: translateY(-30%);
+ }
+
+ #nav-buttons-wrapper {
+  display: flex;
+  position:relative;
+  top: 50%;
+  justify-content: space-around;
+ }
+
+ #nav-buttons-wrapper button {
+  background-color: inherit;
+  border: none;
+  font-size: 18px;
+  color:hsl(240, 28%, 52%)
+ }
+
+ .header {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+ }
+
+ .header img {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  top: -10px;
+  margin-right: 16px;
+ }
+
+ .work-header {
+  background-color: hsl(15, 100%, 70%);
+ }
+
+ .play-header {
+  background-color: hsl(195, 74%, 62%);
+ }
+
+ .study-header {
+  background-color: hsl(348, 100%, 68%);
+ }
+
+ .exercise-header {
+  background-color: hsl(145, 58%, 55%);
+ }
+
+ .social-header {
+  background-color: hsl(264, 64%, 52%);
+ }
+
+ .self-care-header {
+  background-color: hsl(43, 84%, 65%);
+ }
+
+ .section-content {
+  height: 125px;
+  background-color: hsl(235, 46%, 20%);
+  position: relative;
+  transform: translateY(-25%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+ }
+
+ .section-content span:first-of-type {
+  padding: 26px;
+  font-size: 20px;
+  font-weight: 400;
+  color: hsl(240, 30%, 96%);
+ }
+
+ .section-content span:nth-child(2) {
+  padding: 26px;
+  justify-self: end;
+  align-self: center;
  }
 } 
