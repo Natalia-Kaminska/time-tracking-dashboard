@@ -12,86 +12,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet"> 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div id="dashboard-container">
     <div id="profile-container" class="item">
       <div id="profile-wrapper">
-        <div class="profile-photo"><img src="./images/image-jeremy.png" alt="profile-avatar" /></div>
-        <p>Report for</p>
-        <p>Jeremy Robson</p>
-      </div>
-      <div id="profile-time-nav">
-        <span id="nav-buttons-wrapper">
-          <button>Daily</button>
-          <button>Weekly</button>
-          <button>Monthly</button>
+        <img class="profile-photo" src="./images/image-jeremy.png" alt="profile-avatar" />
+        <span id="owner">
+          <p>Report for</p>
+          <p>Jeremy Robson</p>
         </span>
       </div>
-    </div>
-    <div id="work-container" class="item">
-      <div class="header work-header"><img src="./images/icon-work.svg" alt="work"/></div>
-      <div class="section-content"> 
-        <span>Work</span>
-        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
-        <span data-time-current="Work"></span>
-        <span data-time-previous="Work"></span>
+      <div id="nav-buttons-wrapper">
+        <button class="time-frame-button" data-option="daily">Daily</button>
+        <button class="time-frame-button" data-option="weekly">Weekly</button>
+        <button class="time-frame-button" data-option="monthly">Monthly</button>
       </div>
     </div>
-    <div id="play-container" class="item">
-      <div class="header play-header"><img src="./images/icon-play.svg" alt="play"/></div>
-      <div class="section-content"> 
-        <span>Play</span>
-        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
-        <span data-time-current="Play"></span>
-        <span data-time-previous="Play"></span>
-      </div>
-    </div>
-    <div id="study-container" class="item">
-      <div class="header study-header"><img src="./images/icon-study.svg" alt="study"/></div>
-      <div class="section-content"> 
-        <span>Study</span>
-        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
-        <span data-time-current="Study"></span>
-        <span data-time-previous="Study"></span>
-      </div>
-    </div>
-    <div id="exercise-container" class="item">
-      <div class="header exercise-header"><img src="./images/icon-exercise.svg" alt="exercise"/></div>
-      <div class="section-content"> 
-        <span>Exercise</span>
-        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
-        <span data-time-current="Exercise"></span>
-        <span data-time-previous="Exercise"></span>
-      </div> 
-    </div>
-    <div id="social-container" class="item">
-      <div class="header social-header"><img src="./images/icon-social.svg" alt="social"/></div>
-      <div class="section-content"> 
-        <span>Social</span>
-        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
-        <span data-time-current="Social"></span>
-        <span data-time-previous="Social"></span>
-      </div> 
-    </div>
-    <div id="self-care-container" class="item">
-      <div class="header self-care-header"><img src="./images/icon-self-care.svg" alt="self-care"/></div>
-      <div class="section-content"> 
-        <span>Self Care</span>
-        <span class="ellipsis-icon"><img src="./images/icon-ellipsis.svg" alt="ellipsis-icon"/></span>
-        <span data-time-current="Self-care"></span>
-        <span data-time-previous="Self-care"></span>
-      </div> 
-    </div>
-  </div>
   <script src="script.js"></script>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
